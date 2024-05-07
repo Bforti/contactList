@@ -114,6 +114,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					"address": `${address}`
 				  })
 				let data=await resp.json()
+				
 				return data
 				} catch (error) {
 					console.error('Error al postear un contacto:', error);
@@ -146,7 +147,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				try {
 					let resp=await actions.API(`/bforti/contacts/${contact_id}`,'DELETE' )
 					let data=await resp.json()
-					actions.getAllContacts()
+					
 					return data
 				} catch (error) {
 					console.error('Error al eliminar el contacto:', error);

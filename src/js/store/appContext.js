@@ -32,8 +32,10 @@ const injectContext = PassedComponent => {
 			 *
 			 **/
 			
-			
+			state.actions.createAgenda()
 			state.actions.getAllAgenda()
+			state.actions.getAllContacts()
+			
 			
 			
 		}, []);
