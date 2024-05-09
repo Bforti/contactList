@@ -7,17 +7,9 @@ export const Single = props => {
 	const { store, actions } = useContext(Context);
 	const params = useParams();
 	return (
-		<div className="jumbotron">
-			<h1 className="display-4">This will show the demo element: {store.demo[params.theid].title}</h1>
-
-			<hr className="my-4" />
-
-			<Link to="/">
-				<span className="btn btn-primary btn-lg" href="#" role="button">
-					Back home
-				</span>
-			</Link>
-		</div>
+	<div className="container">
+      <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.lapatilla.com%2F2013%2F04%2F10%2Flos-chavistas-entre-cambures-y-pajaritos-fotos%2F&psig=AOvVaw21kPH4hFUnmmG-ZpQqL-MJ&ust=1715300701570000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCLDLwJmn_4UDFQAAAAAdAAAAABAEhttps://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fes%2Ffree-png-aqbub&psig=AOvVaw21kPH4hFUnmmG-ZpQqL-MJ&ust=1715300701570000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCLDLwJmn_4UDFQAAAAAdAAAAABAI" className="img-fluid" alt="Your image description" />
+    </div>
 	);
 };
 
